@@ -46,11 +46,17 @@ myServiceModule.factory('myHttpService', function($http, myGlobalDataService){
     return {
 
         getPagedList : function(page, listPerPage) {
+            
+            console.log("3-1");
+            
             $http.get('/apis/list/'+page+'/'+listPerPage)
                 .success(function(data) {
                     //console.log("server data arrived!!!");//debug
                     angular.copy(data, myGlobalDataService.msgDatas);
                 });
+                
+            console.log("3-2");
+            
         },
         view : function(id) {
             return $http.get('/apis/view/'+id);

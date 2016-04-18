@@ -3,7 +3,8 @@ var router = express.Router();
 
 //------------- mongojs -------------------------------------------------------
 //var databaseUrl = "guest_book"; // "username:password@example.com/mydb"
-var databaseUrl = 'mongodb://psw7194:dbswjs0221@ds047591.mongolab.com:47591/spark';
+//var databaseUrl = 'mongodb://psw7194:dbswjs0221@ds047591.mongolab.com:47591/spark';
+var databaseUrl = 'mongodb://psw7194:qkrtkddn@ds047591.mongolab.com:47591/spark';
 //var collections = ["GuestBookMsgs"];
 var collections = ["notice"];
 var ObjectId = require("mongojs").ObjectId;
